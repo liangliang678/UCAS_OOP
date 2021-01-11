@@ -12,34 +12,34 @@ public class red_packet {
 
 		while (nextRound) {
 			// Prompt the user to enter total money and packet count
-			System.out.print("ÊäÈëºì°ü×Ü½ğ¶î: ");
+			System.out.print("è¾“å…¥çº¢åŒ…æ€»é‡‘é¢: ");
 			double money = 0;
 			try {
 				money = Double.parseDouble(input.nextLine());
 				money = Math.floor(money * 100) / 100;
 			} catch (Exception e) {
-				System.out.println("ÊäÈëÖµ´íÎó£¬ÇëÖØĞÂÊäÈë¡£");
+				System.out.println("è¾“å…¥å€¼é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ã€‚");
 				continue;
 			}
 			
 			if (money < 0) {
 				// Input error
-				System.out.println("ÊäÈëÖµ´íÎó£¨²»ÄÜÎª¸ºÖµ£©£¬ÇëÖØĞÂÊäÈë¡£");
+				System.out.println("è¾“å…¥å€¼é”™è¯¯ï¼ˆä¸èƒ½ä¸ºè´Ÿå€¼ï¼‰ï¼Œè¯·é‡æ–°è¾“å…¥ã€‚");
 				continue;
 			}
 
-			System.out.print("ÊäÈëºì°üÊıÁ¿: ");
+			System.out.print("è¾“å…¥çº¢åŒ…æ•°é‡: ");
 			int count = 0;
 			try {
 				count = Integer.parseInt(input.nextLine());
 			} catch (Exception e) {
-				System.out.println("ÊäÈëÖµ´íÎó£¬ÇëÖØĞÂÊäÈë¡£");
+				System.out.println("è¾“å…¥å€¼é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ã€‚");
 				continue;
 			}
 			
 			if (count < 0) {
 				// Input error
-				System.out.println("ÊäÈëÖµ´íÎó£¨²»ÄÜÎª¸ºÖµ£©£¬ÇëÖØĞÂÊäÈë¡£");
+				System.out.println("è¾“å…¥å€¼é”™è¯¯ï¼ˆä¸èƒ½ä¸ºè´Ÿå€¼ï¼‰ï¼Œè¯·é‡æ–°è¾“å…¥ã€‚");
 				continue;
 			}
 			
@@ -58,14 +58,14 @@ public class red_packet {
 					get_money = get_money <= 0.01 ? 0.01 : get_money;
 					get_money = (double)Math.floor(get_money * 100) / 100;
 				}
-				System.out.println("ÇÀµ½ÁËºì°ü" + get_money + "Ôª");
+				System.out.println("æŠ¢åˆ°äº†çº¢åŒ…" + get_money + "å…ƒ");
 				remain_money -= get_money;
 				remain_count --;
 			}
 
 			boolean retype = true;
 			while (retype) {
-				System.out.print("ÊÇ·ñ¼ÌĞø£¿ÇëÊäÈëY»òN£º");
+				System.out.print("æ˜¯å¦ç»§ç»­ï¼Ÿè¯·è¾“å…¥Yæˆ–Nï¼š");
 				try {
 					String answer = input.nextLine();
 					if (answer.toLowerCase().equals("y")){
@@ -75,13 +75,13 @@ public class red_packet {
 						break;
 					}
 				} catch (InputMismatchException e) {
-					System.out.println("ÊäÈëÖµ´íÎó£¬ÇëÖØĞÂÊäÈë¡£");
+					System.out.println("è¾“å…¥å€¼é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ã€‚");
 					continue;
 				}
 			}
 		}
 		
-		System.out.println("Ğ»Ğ»Ê¹ÓÃ£¡");
+		System.out.println("è°¢è°¢ä½¿ç”¨ï¼");
 		input.close();
 	}
 }
