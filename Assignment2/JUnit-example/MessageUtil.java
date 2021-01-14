@@ -1,18 +1,18 @@
 /*
-* This class prints the given message on console.
-*/
+ * This class prints the given message on console.
+ */
 public class MessageUtil {
 
-    private String message;
+   	private String message;
  
     // Constructor
     public MessageUtil(String message){
-       this.message = message;
+		this.message = message;
     }
  
     // Prints the message
     public String printMessage(){
-       System.out.println(message);
-       return message;
+      	System.out.println(message);
+      	return message;
     }   
- }  
+}
