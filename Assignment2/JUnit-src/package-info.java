@@ -1,8 +1,6 @@
 /**
- * Provides JUnit core classes and annotations. 
- *
- * Corresponds to junit.framework in Junit 3.x.
+ * Provides classes used to describe, collect, run and analyze multiple tests.
  *
  * @since 4.0
  */
-package org.junit;
+package org.junit.runner;
