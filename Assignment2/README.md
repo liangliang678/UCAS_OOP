@@ -23,7 +23,7 @@ JUnit是一个Java编程语言的单元测试框架。单元测试是一个对�
 
 ## JUnit Runner
 本报告主要关注JUnit4中的Runner模块。Runner模块封装在包`org.junit.runner`中，开发者对该包功能的描述是“Provides classes used to describe, collect, run and analyze multiple tests”。Runner模块中最主要的类是JUnitCore，读者可以参考JUnitCore.java。下面是JUnitCore的UML类图。
-![JUnitCore的UML类图](./image/JUnitCore.png)
+![JUnitCore的UML类图](https://gitee.com/liangliang678/OOP/blob/master/Assignment2/image/JunitCore.png)
 可以看到JUnitCore类中唯一的成员变量是`RunNotifier`类的对象`notifier`，成员方法中包括了`addListner`和`removeListener`用于增加和移除`RUnListner`类的对象`listener`。很显然这运用了设计模式中的“观察者模式”。
 
 
